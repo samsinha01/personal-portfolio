@@ -417,18 +417,18 @@ body,html{
     width:170px;
     height: 184px;
 }
-@media(max-width:500px){
-    .project-cards{
-        flex:1 0 300px;
-    }
-}
 .project-card-bside>table>tbody>tr>td{
     padding:0px 3px 0px 3px;
 }
-.project-cards{
-    flex:1 0 480px;
+.project-cards{    
     border-radius: 8px;
 }
+@media(min-width:768px){
+    .project-cards{
+        flex:1 0 480px;
+    }
+}
+
 
 
 /************************************contact-section**********************************/
@@ -492,6 +492,11 @@ body,html{
   }
 .contact-btn:active::before {
     filter: blur(0.2em);
+}
+@media(max-width:768px){
+    .contact-inputs{
+        margin-block:10px;
+    }
 }
 
 /****************************Animation Styles*******************************/
