@@ -1,43 +1,58 @@
 "use strict";
+
+let cursorDot = document.querySelector("[data-cursor-dot]");
+let cursorOutline = document.querySelector("[data-cursor-outline]");
+
+window.addEventListener("mousemove", function(e){
+    const posX = e.clientX;
+    const posY = e.clientY;
+
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
+
+    cursorOutline.style.left = `${posX}px`;
+    cursorOutline.style.top = `${posY}px`;
+});
+
 let ProjectArray = [
     {
         'name':"Shrikant hospital & Research Institute",
         'desc':"Shrikant hospital is a multispecialist hospital and they provide many facilities but there speciality is pediatrics treatment ",
-        'date':"may, 2024",
-        'tech':"html5,css3,js",
+        'date':"April, 2024",
+        'tech':"html5,css3,js,Bootstrap",
         'type':"Health & Care",
         'url':"https://www.shishubhawan.com",
         'imgUrl':"hospital1.png"
     },
     {
-        'name':"Shrikant hospital & Research Institute",
-        'desc':"Shrikant hospital is a multispecialist hospital and they provide many facilities but there speciality is pediatrics treatment ",
-        'date':"may, 2024",
-        'tech':"html5,css3,js",
-        'type':"Health & Care",
+        'name':"College Chat Bot",
+        'desc':"A college chatbot provides instant support for students, answering academic queries, offering course information, and assisting with campus services",
+        'date':"January, 2024",
+        'tech':"html5,css3,js,Botpress",
+        'type':"conversational tools",
         'url':"https://www.shishubhawan.com",
         'imgUrl':"chatbot.png"
     },
     {
-        'name':"Shrikant hospital & Research Institute",
-        'desc':"Shrikant hospital is a multispecialist hospital and they provide many facilities but there speciality is pediatrics treatment ",
-        'date':"may, 2024",
-        'tech':"html5,css3,js",
-        'type':"Health & Care",
+        'name':"Science College Alumni Network Website",
+        'desc':"For connect with fellow graduates, build lifelong relationships, and advance your career through our college alumni network.",
+        'date':"august, 2023",
+        'tech':"html5,css3,js,Bootstrap,Jquery",
+        'type':"Network and Communication",
         'url':"https://www.shishubhawan.com",
-        'imgUrl':"hospital.jpg"
+        'imgUrl':"college.png"
     },
     {
-        'name':"Shrikant hospital & Research Institute",
-        'desc':"Shrikant hospital is a multispecialist hospital and they provide many facilities but there speciality is pediatrics treatment ",
-        'date':"may, 2024",
-        'tech':"html5,css3,js",
-        'type':"Health & Care",
-        'url':"https://www.shishubhawan.com",
-        'imgUrl':"hospital.jpg"
+        'name':"Aadharshila Builder",
+        'desc':"Aadharshila Builders: Crafting Quality Homes with Precision and Integrity.",
+        'date':"march, 2023",
+        'tech':"html5,css3,js,Bootstrap",
+        'type':"Construction",
+        'url':"https://aadharshilabuilders.in/",
+        'imgUrl':"builder.png"
     }
 ];
-
+console.table(ProjectArray);
 ProjectArray.forEach((item, index)=>{
     project_row.innerHTML+=`
         <div class="mt-5 p-2 project-cards" data-aos="zoom-in">
@@ -70,7 +85,7 @@ ProjectArray.forEach((item, index)=>{
                             <tr>
                                 <td>URL</td>
                                 <td>:</td>
-                                <td>${item.url}</td>
+                                <td><a href="${item.url} target="_self">${item.url}</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -96,7 +111,7 @@ function medQueryFun(){
 
                     <div class="clearfix">
                         <div class="cv_btn float-end mt-3 zoom-in-element">
-                            <a href="/img/SameerSinhaResume.pdf" download>Download CV</a>
+                            <a href="/img/meresume.pdf" download>Download CV</a>
                         </div>
                     </div>
 
