@@ -162,9 +162,9 @@ x.addEventListener("change", function() {
 
 
 /***************************go to top of the page when load the page********************/
-// window.addEventListener('load', function() {
-//     window.scrollTo(0, 0);
-// });
+window.addEventListener('load', function() {
+     window.scrollTo(0, 0);
+});
 
 
 /*************************inquiry-msg-sending-js*******************/
