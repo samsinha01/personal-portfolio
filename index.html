@@ -19,7 +19,42 @@
         <link rel="stylesheet" href="css/cus-bootstrap.css">
     </head>
     <body class="bg-secondary">
-        <nav class="p-5 mb-5 mt-5"></nav>
+        <nav class="p-2">
+            <div class="container">
+                <div class="inner-nav dis-flex justify-sp-between item-center">
+                    <div class="nav-aside item-center">
+                        <div class="profile-img">
+                            <img src="img/new.png" alt="profile-photo" width="100%">
+                        </div>
+                        <p class="text-white m-0">Sameer Sinha</p>
+                    </div>
+                    <div class="nav-center">
+                        <ul class="dis-flex list-style-none m-0">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#goto">About</a></li>
+                            <li><a href="#my_resume">Resume</a></li>
+                            <li><a href="#project">Project</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-bside">
+                        <a href="tel:+919770661844" class="p-2"><i class="fa-solid fa-phone-volume"></i></a>
+                        <a href="mailto:anuragsinha.20411@gmail.com" class="p-2"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+
+                    <!--------------toggle-menu-icon-html-code--------------->
+                    <label for="checkbox" class="nav-toggle" onclick="navToggle(this)">
+                        <div class="bars" id="bar1"></div>
+                        <div class="bars" id="bar2"></div>
+                        <div class="bars" id="bar3"></div>
+                    </label>
+                    <!--------------toggle-menu-icon-html-code--------------->
+                </div>
+            </div>
+        </nav>
+        <div class="toggled-links"></div>
+        <div class="p-5 mb-5 dummy" ></div>
         <main>
             <div class="cursor-dot" data-cursor-dot></div>
             <div class="cursor-outine" data-cursor-outline></div>
@@ -127,7 +162,7 @@
                                 </div>
 
                                 <div class="about-bside" data-aos="zoom-in">
-                                    <p class="text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias veniam earum minus, culpa ducimus aliquid rerum eveniet debitis tenetur exercitationem officia quidem asperiores architecto, enim sit ut voluptatibus laudantium soluta!</p>
+                                    <p class="text-gray">Having Exposure in Software design, development using HTML, CSS, JS, git, version Control System and having good communication skills, dedication, hard-working and leading activities.</p>
 
                                     <!-- ----------------Personal-details-side---------------- -->
                                     <div class="personal-detail">
@@ -287,7 +322,7 @@
                                             </span>
                                             <span class="BG linkedin"></span>
                                         </button>
-
+                                        
                                         <button class="sm-btn">
                                             <span class="svgContainer">
                                                 <a href="https://api.whatsapp.com/send?phone=919770661844&text=Hi, I am visiting your website and I want to develop website ">
@@ -333,8 +368,8 @@
         </main>
 
         <script src="js/main.js"></script>
-        <script src="js/particles.js"></script>
-        <script src="js/app.js"></script>
+        <script src="js/particles.js"></script><!------------------particles-animation-js-------------------->
+        <script src="js/app.js"></script>      <!--------------------same-us------------------>
         <script>
             AOS.init();
         </script>
