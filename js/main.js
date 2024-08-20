@@ -1,4 +1,20 @@
 "use strict";
+/**********************toggle-menu-js********************** */
+function navToggle(x) {
+    x.classList.toggle("toggle-change");
+    document.querySelector(".toggled-links").innerHTML=`
+        <ul class="dis-flex list-style-none m-0 p-0">
+            <li class="border-bottom"><a href="#new_home">Home</a></li>
+            <li class="border-bottom"><a href="#goto">About</a></li>
+            <li class="border-bottom"><a href="#my_resume">Resume</a></li>
+            <li class="border-bottom"><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    `;
+    document.querySelector(".toggled-links").classList.toggle("nav-normal");
+    document.querySelector(".toggled-links>ul").style.flexDirection="column";
+}
+/**********************toggle-menu-js-end********************** */
 
 let cursorDot = document.querySelector("[data-cursor-dot]");
 let cursorOutline = document.querySelector("[data-cursor-outline]");
@@ -6,7 +22,6 @@ let cursorOutline = document.querySelector("[data-cursor-outline]");
 window.addEventListener("mousemove", function(e){
     const posX = e.clientX;
     const posY = e.clientY;
-
     cursorDot.style.left = `${posX}px`;
     cursorDot.style.top = `${posY}px`;
 
@@ -52,7 +67,7 @@ let ProjectArray = [
         'imgUrl':"builder.png"
     }
 ];
-console.table(ProjectArray);
+// console.table(ProjectArray);
 ProjectArray.forEach((item, index)=>{
     project_row.innerHTML+=`
         <div class="mt-5 p-2 project-cards" data-aos="zoom-in">
@@ -101,9 +116,11 @@ ProjectArray.forEach((item, index)=>{
 function medQueryFun(){
     if(x.matches){
         document.querySelector("#home").style.display="none";   //hide profile descriptions
+        document.querySelector(".nav-center>ul>li:nth-child(1)>a").setAttribute("href",'#new_home');
+        document.querySelector(".dummy").classList.remove('mb-5');
 
         front_view.innerHTML=`
-            <div class="container">
+            <div class="container" id="new_home">
                 <div>
                     <h2 class="zoom-in-element font-cursive text-white">My Self, <span class="text-yellow">Sameer Sinha</span></h2>
 
