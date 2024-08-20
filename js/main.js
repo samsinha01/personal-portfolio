@@ -36,7 +36,7 @@ let ProjectArray = [
         'date':"April, 2024",
         'tech':"html5,css3,js,Bootstrap",
         'type':"Health & Care",
-        'url':"https://www.shishubhawan.com",
+        'url':"https://github.com/samsinha01/shishu-bhawan-hospital.git",
         'imgUrl':"hospital1.png"
     },
     {
@@ -45,7 +45,7 @@ let ProjectArray = [
         'date':"January, 2024",
         'tech':"html5,css3,js,Botpress",
         'type':"conversational tools",
-        'url':"https://www.shishubhawan.com",
+        'url':"Currently Not Available",
         'imgUrl':"chatbot.png"
     },
     {
@@ -54,7 +54,7 @@ let ProjectArray = [
         'date':"august, 2023",
         'tech':"html5,css3,js,Bootstrap,Jquery",
         'type':"Network and Communication",
-        'url':"https://www.shishubhawan.com",
+        'url':"https://github.com/samsinha01/college-alumni-network.git",
         'imgUrl':"college.png"
     },
     {
