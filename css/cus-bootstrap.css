@@ -89,6 +89,9 @@ a:focus{
 .justify-sp-even{
     justify-content: space-evenly;
 }
+.justify-sp-between{
+    justify-content: space-between;
+}
 .justify-start{
     justify-content: start;
 }
