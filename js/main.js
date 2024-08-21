@@ -100,7 +100,7 @@ ProjectArray.forEach((item, index)=>{
                             <tr>
                                 <td>URL</td>
                                 <td>:</td>
-                                <td><a href="${item.url} target="_self">${item.url}</a></td>
+                                <td><a href="${item.url} target="_self">${item.name}</a></td>
                             </tr>
                         </tbody>
                     </table>
